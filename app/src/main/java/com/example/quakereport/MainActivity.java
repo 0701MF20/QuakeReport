@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         a1.add(new Quakesinfo(4.5f,"YGJ","3-APRIL-2020"));
         a1.add(new Quakesinfo(6.5f,"YGJ","3-MAY-2020"));*/
         ArrayList<Quakesinfo> a1=QueryUtils.extractEarthquakes();
-
-
         QuakesinfoAdapter adapter1=new QuakesinfoAdapter(this,a1);
         ListView lv1=(ListView)findViewById(R.id.listview1);
         lv1.setAdapter(adapter1);

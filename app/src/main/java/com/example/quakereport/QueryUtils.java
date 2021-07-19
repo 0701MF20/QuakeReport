@@ -45,12 +45,13 @@ public final class QueryUtils{
             for(int i=0;i<JSONarray.length();i++)
             {
                 JSONObject obj = JSONarray.getJSONObject(i);
-                int mag=obj.getInt("mag");
+                Double mmag=obj.getDouble("mag");
                 String loc=obj.getString("place");
                 long times=obj.getLong("time");
                 Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
-                String date=sdf.format(d1);
+                String dates=sdf.format(d1);
+                Quakesinfo qi=new Quakesinfo(mmag,loc,dates);
             }
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
             // build up a list of Earthquake objects with the corresponding data.
