@@ -27,7 +27,7 @@ public final class QueryUtils{
      * This class is only meant to hold static variables and methods, which can be accessed
      * directly from the class name QueryUtils (and an object instance of QueryUtils is not needed).
      */
-    private QueryUtils() {
+    private QueryUtils(){
     }
     /**
      * Return a list of {@link Quakesinfo} objects that has been built up from
@@ -59,10 +59,9 @@ public final class QueryUtils{
             // If an error is thrown when executing any of the above statements in the "try" block,
             // catch the exception here, so the app doesn't crash. Print a log message
             // with the message from the exception.
-            Log.e("QueryUtils", "Problem parsing the earthquake JSON results", e);
+            Log.e("QueryUtils", "Problem parsing the earthquake JSON results",e);
         }
         // Return the list of earthquakes
         return earthquakes;
     }
-
 }

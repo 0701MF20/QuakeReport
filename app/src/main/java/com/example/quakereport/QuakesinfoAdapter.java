@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
     QuakesinfoAdapter(Activity context,ArrayList<Quakesinfo> quake)
     {
-        super(this,0,quake);
+        super(context,0,quake);
     }
     @Override
     public View getView(int position,View convertView,ViewGroup parent) {
