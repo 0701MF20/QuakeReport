@@ -1,7 +1,7 @@
 package com.example.quakereport;
 
 public class Quakesinfo{
-    private final double mMag;
+    private final Double mMag;
     private final String mName;
    // private final String mDate;
    private final long mDate;
@@ -11,13 +11,13 @@ public class Quakesinfo{
         mName=name;
         mDate=date;
     }*/
-    Quakesinfo(double mag,String name,long date)
+    Quakesinfo(Double mag,String name,long date)
     {
         mMag=mag;
         mName=name;
         mDate=date;
     }
-    public double getMag()
+    public Double getMag()
     {
         return mMag;
     }
