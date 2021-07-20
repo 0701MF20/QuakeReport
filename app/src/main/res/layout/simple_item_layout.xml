@@ -26,5 +26,4 @@
         android:textStyle="bold"
         android:id="@+id/date_id"
         />
-
 </LinearLayout>
