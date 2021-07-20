@@ -4,14 +4,14 @@ public class Quakesinfo{
     private final Double mMag;
     private final String mName;
    // private final String mDate;
-   private final long mDate;
+   private final Long mDate;
     /*Quakesinfo(double mag,String name,String date)
     {
         mMag=mag;
         mName=name;
         mDate=date;
     }*/
-    Quakesinfo(Double mag,String name,long date)
+    Quakesinfo(Double mag,String name,Long date)
     {
         mMag=mag;
         mName=name;
