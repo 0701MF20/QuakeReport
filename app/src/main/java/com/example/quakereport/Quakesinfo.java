@@ -1,9 +1,9 @@
 package com.example.quakereport;
 
 public class Quakesinfo{
-    private double mMag;
-    private String mName;
-    private String mDate;
+    private final double mMag;
+    private final String mName;
+    private final String mDate;
     Quakesinfo(double mag,String name,String date)
     {
         mMag=mag;

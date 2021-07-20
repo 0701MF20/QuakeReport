@@ -9,25 +9,21 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:textSize="29dp"
+        android:textStyle="bold"
         android:id="@+id/mag_id"
-        android:gravity="center"
         />
     <TextView
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/name_id"
-        android:textSize="29dp"
-        android:gravity="center"
+        android:textStyle="bold"
         />
     <TextView
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:textSize="29dp"
-
-        android:gravity="center"
+        android:textStyle="bold"
         android:id="@+id/date_id"
         />
 
