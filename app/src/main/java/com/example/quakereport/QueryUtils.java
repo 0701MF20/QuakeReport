@@ -45,13 +45,14 @@ public final class QueryUtils{
             for(int i=0;i<JSONarray.length();i++)
             {
                 JSONObject obj = JSONarray.getJSONObject(i);
-                Double mmag=obj.getDouble("mag");
+                double mmag=obj.getDouble("mag");
                 String loc=obj.getString("place");
                 long times=obj.getLong("time");
                 Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
                 String dates=sdf.format(d1);
                 Quakesinfo qi=new Quakesinfo(mmag,loc,dates);
+                earthquakes.add(qi);
             }
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
             // build up a list of Earthquake objects with the corresponding data.
@@ -60,7 +61,7 @@ public final class QueryUtils{
             // If an error is thrown when executing any of the above statements in the "try" block,
             // catch the exception here, so the app doesn't crash. Print a log message
             // with the message from the exception.
-            Log.e("QueryUtils", "Problem parsing the earthquake JSON results",e);
+            Log.e("QueryUtils","Problem parsing the earthquake JSON results",e);
         }
         // Return the list of earthquakes
         return earthquakes;

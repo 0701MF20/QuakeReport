@@ -1,16 +1,16 @@
 package com.example.quakereport;
 
 public class Quakesinfo{
-    private float mMag;
+    private double mMag;
     private String mName;
     private String mDate;
-    Quakesinfo(float mag,String name,String date)
+    Quakesinfo(double mag,String name,String date)
     {
         mMag=mag;
         mName=name;
         mDate=date;
     }
-    public float getMag()
+    public double getMag()
     {
         return mMag;
     }
