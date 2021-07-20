@@ -48,11 +48,12 @@ public final class QueryUtils{
                 double mmag=obj.getDouble("mag");
                 String loc=obj.getString("place");
                 long times=obj.getLong("time");
-                Date d1=new Date(times);
+            /*    Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
                 String dates=sdf.format(d1);
-                Quakesinfo qi=new Quakesinfo(mmag,loc,dates);
-                earthquakes.add(qi);
+                Quakesinfo qiii=new Quakesinfo(mmag,loc,dates);*/
+                Quakesinfo qiii=new Quakesinfo(mmag,loc,times);
+                earthquakes.add(qiii);
             }
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
             // build up a list of Earthquake objects with the corresponding data.

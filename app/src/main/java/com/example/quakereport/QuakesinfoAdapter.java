@@ -31,7 +31,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         TextView t2=(TextView)listview.findViewById(R.id.name_id);
         t2.setText(adapter.getName());
         TextView t3=(TextView)listview.findViewById(R.id.date_id);
-        t3.setText(adapter.getDate());
+        t3.setText(""+adapter.getDate());
         return listview;
     }
 }
