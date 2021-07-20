@@ -45,9 +45,10 @@ public final class QueryUtils{
             for(int i=0;i<JSONarray.length();i++)
             {
                 JSONObject obj = JSONarray.getJSONObject(i);
-                double mmag=obj.getDouble("mag");
-                String loc=obj.getString("place");
-                long times=obj.getLong("time");
+                JSONObject property=obj.getJSONObject("properties");
+                double mmag=property.getDouble("mag");
+                String loc=property.getString("place");
+                long times=property.getLong("time");
             /*    Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
                 String dates=sdf.format(d1);

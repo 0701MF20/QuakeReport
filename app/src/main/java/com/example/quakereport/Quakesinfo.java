@@ -1,8 +1,8 @@
 package com.example.quakereport;
 
 public class Quakesinfo{
-    private final double mMag;
-    private final String mName;
+    private double mMag;
+    private String mName;
    // private final String mDate;
     private final long mDate;
     /*Quakesinfo(double mag,String name,String date)
