@@ -5,15 +5,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import org.w3c.dom.Text;
-
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
+import java.util.Date;
 public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
     QuakesinfoAdapter(Activity context,ArrayList<Quakesinfo> quake)
     {
@@ -35,7 +33,10 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         TextView t2=(TextView)listview.findViewById(R.id.name_id);
         t2.setText(adapter.getName());
         TextView t3=(TextView)listview.findViewById(R.id.date_id);
-        t3.setText(""+adapter.getDate());
+        Date dates=new Date(adapter.getDate());
+        SimpleDateFormat formatted=new SimpleDateFormat("dd-mm-yyyy, HH:MM:SS a");
+        String outputs=formatted.format(dates);
+        t3.setText(outputs);
         return listview;
     }
 }

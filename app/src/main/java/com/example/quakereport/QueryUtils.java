@@ -47,6 +47,7 @@ public final class QueryUtils{
                 double mmag=property.getDouble("mag");
                 String loc=property.getString("place");
                 long times=property.getLong("time");
+                Date d1=new Date(times);
             /*    Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
                 String dates=sdf.format(d1);
