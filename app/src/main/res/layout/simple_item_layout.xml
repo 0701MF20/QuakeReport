@@ -23,7 +23,21 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:id="@+id/name2_id"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:textStyle="bold"
         android:id="@+id/date_id"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/date2_id"
         />
 </LinearLayout>
