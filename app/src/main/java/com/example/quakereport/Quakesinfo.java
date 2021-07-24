@@ -4,7 +4,7 @@ public class Quakesinfo{
     private double mMag;
     private String mName;
    // private final String mDate;
-    private final long mDate;
+    private long mDate;
     /*Quakesinfo(double mag,String name,String date)
     {
         mMag=mag;
