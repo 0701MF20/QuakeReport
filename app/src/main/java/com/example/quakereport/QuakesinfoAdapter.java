@@ -32,11 +32,24 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         TextView t2=(TextView)listview.findViewById(R.id.name_id);
         TextView t22=(TextView)listview.findViewById(R.id.name2_id);
         String place=adapter.getName();
-        String[] place_array=place.split("of");
+        if(place.contains("of"))
+        {
+            String[] place_array=place.split("of");
+            String place1=place_array[0];
+            String place2=place_array[1];
+            t2.setText(place1);
+            t22.setText(place2);
+        }
+        else
+        {
+            t2.setText("Near the ");
+            t22.setText(place);
+        }
+        /*String[] place_array=place.split("of");
         String place1=place_array[0];
         String place2=place_array[1];
         t2.setText(place1);
-        t22.setText(place2);
+        t22.setText(place2);*/
         /*TextView t3=(TextView)listview.findViewById(R.id.date_id);
         Date dates=new Date(adapter.getDate());
         SimpleDateFormat formatted=new SimpleDateFormat("dd-mm-yyyy, HH:MM:SS a");
