@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:id="@+id/mag_id"
+        android:textSize="16sp"
         />
     <TextView
         android:layout_width="0dp"
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/name_id"
         android:textStyle="bold"
+        android:textSize="16sp"
         />
     <TextView
         android:layout_width="0dp"
@@ -25,6 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/name2_id"
         android:textStyle="bold"
+        android:textSize="16sp"
         />
     <TextView
         android:layout_width="0dp"
@@ -32,6 +35,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:id="@+id/date_id"
+        android:textSize="16sp"
         />
     <TextView
         android:layout_width="0dp"
@@ -39,5 +43,6 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:id="@+id/date2_id"
+        android:textSize="16sp"
         />
 </LinearLayout>
