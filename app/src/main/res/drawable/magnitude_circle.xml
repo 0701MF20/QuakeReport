@@ -6,10 +6,10 @@
         android:color="@color/magnitude_color1"
         />
     <size
-        android:height="16dp"
-        android:width="16dp"
+        android:height="10dp"
+        android:width="10dp"
         />
     <corners
-        android:radius="32dp"
+        android:radius="5dp"
         />
 </shape>
