@@ -54,7 +54,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color5);
                 break;
             case 6:
-                color=ContextCompat.getColor(getContext(),R.color.magnitude_color6);
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color1);
                 break;
             case 7:
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color7);
