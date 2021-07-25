@@ -64,9 +64,10 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
                 break;
             case 9:
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color9);
+                break;
             default:
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color10);
-
+                break;
         }
 
         magnitudecircle.setColor(color);
