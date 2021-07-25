@@ -31,14 +31,16 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         DecimalFormat formatter=new DecimalFormat("0.0");
         String output=formatter.format(adapter.getMag());
         t1.setText(output);
-//Gradient dREAWABLE
+//Gradient dREAWABLE for graphics which is circle
         GradientDrawable magnitudecircle=(GradientDrawable)t1.getBackground();
+        //floor is math class function
         int magg=(int)Math.floor(adapter.getMag());
         int color;
         switch(magg)
         {
             case 0:
             case 1:
+                //in order to convvert the reference id of color to integer number for color
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color1);
                 break;
             case 2:
@@ -54,7 +56,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color5);
                 break;
             case 6:
-                color=ContextCompat.getColor(getContext(),R.color.magnitude_color1);
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color6);
                 break;
             case 7:
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color7);
@@ -69,12 +71,8 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
                 color=ContextCompat.getColor(getContext(),R.color.magnitude_color10);
                 break;
         }
-
+        //for setting the color on the background
         magnitudecircle.setColor(color);
-
-
-
-
         /*TextView t2=(TextView)listview.findViewById(R.id.name_id);
         t2.setText(adapter.getName());*/
         TextView t2=(TextView)listview.findViewById(R.id.name_id);
