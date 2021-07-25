@@ -105,6 +105,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         TextView t33=(TextView)listview.findViewById(R.id.date2_id);
         //Date class object is to created in which single argument constructor in which value is passed which is long
         Date dates=new Date(adapter.getDate());
+        //
         SimpleDateFormat formatted=new SimpleDateFormat("dd-mm-yyyy,HH:MM:SS a");
         String final_date=formatted.format(dates);
         String[] array_date=final_date.split(",");
