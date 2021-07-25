@@ -12,6 +12,7 @@
         android:textStyle="bold"
         android:id="@+id/mag_id"
         android:textSize="16sp"
+        android:background="@drawable/magnitude_circle"
         />
     <TextView
         android:layout_width="0dp"

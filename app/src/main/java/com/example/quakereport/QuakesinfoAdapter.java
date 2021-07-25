@@ -1,10 +1,14 @@
 package com.example.quakereport;
 import android.app.Activity;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
+
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -27,6 +31,49 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         DecimalFormat formatter=new DecimalFormat("0.0");
         String output=formatter.format(adapter.getMag());
         t1.setText(output);
+//Gradient dREAWABLE
+        GradientDrawable magnitudecircle=(GradientDrawable)t1.getBackground();
+        int magg=(int)Math.floor(adapter.getMag());
+        int color;
+        switch(magg)
+        {
+            case 0:
+            case 1:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color1);
+                break;
+            case 2:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color2);
+                break;
+            case 3:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color3);
+                break;
+            case 4:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color4);
+                break;
+            case 5:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color5);
+                break;
+            case 6:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color6);
+                break;
+            case 7:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color7);
+                break;
+            case 8:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color8);
+                break;
+            case 9:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color9);
+            default:
+                color=ContextCompat.getColor(getContext(),R.color.magnitude_color10);
+
+        }
+
+        magnitudecircle.setColor(color);
+
+
+
+
         /*TextView t2=(TextView)listview.findViewById(R.id.name_id);
         t2.setText(adapter.getName());*/
         TextView t2=(TextView)listview.findViewById(R.id.name_id);
