@@ -80,7 +80,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         String place=adapter.getName();
         if(place.contains("of"))
         {
-            String[] place_array=place.split("of");
+            String[] place_array=place.split("?<=of");
             String place1=place_array[0];
             String place2=place_array[1];
             t2.setText(place1);
