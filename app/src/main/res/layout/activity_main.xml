@@ -6,6 +6,4 @@
     android:layout_height="wrap_content"
     android:id="@+id/listview1"
     tools:context=".MainActivity">
-
-
 </ListView>
