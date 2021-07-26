@@ -80,7 +80,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         String place=adapter.getName();
         if(place.contains("of"))
         {
-            String[] place_array=place.split("?<=of");
+            String[] place_array=place.split("of");
             String place1=place_array[0];
             String place2=place_array[1];
             t2.setText(place1);
@@ -105,7 +105,6 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         TextView t33=(TextView)listview.findViewById(R.id.date2_id);
         //Date class object is to created in which single argument constructor in which value is passed which is long
         Date dates=new Date(adapter.getDate());
-        //
         SimpleDateFormat formatted=new SimpleDateFormat("dd-mm-yyyy,HH:MM:SS a");
         String final_date=formatted.format(dates);
         String[] array_date=final_date.split(",");
