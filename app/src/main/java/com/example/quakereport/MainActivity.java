@@ -1,6 +1,11 @@
 package com.example.quakereport;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +24,19 @@ public class MainActivity extends AppCompatActivity {
         QuakesinfoAdapter adapter1=new QuakesinfoAdapter(this,a1);
         ListView lv1=(ListView)findViewById(R.id.listview1);
         lv1.setAdapter(adapter1);
+        //ITEM ON CLICK LISTENER
+        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Quakesinfo adapts=adapter1.getItem(position);
+                Uri URL=Uri.parse(adapts.getUrl());
+                Intent webpage=new Intent(Intent.ACTION_VIEW,URL);
+                startActivity(webpage);
+            }
+        });
+
+
+
         //just about string split with split function
        //case 1 about the split of 123 and 678899
      /*   String s1="1234-678899";

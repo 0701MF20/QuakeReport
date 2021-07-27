@@ -112,6 +112,7 @@ public class QuakesinfoAdapter extends ArrayAdapter<Quakesinfo> {
         String date_2=array_date[1];
         t3.setText(date_1);
         t33.setText(date_2);
+
         return listview;
     }
 }

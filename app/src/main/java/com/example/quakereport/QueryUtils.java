@@ -44,12 +44,13 @@ public final class QueryUtils{
                 double mmag=property.getDouble("mag");
                 String loc=property.getString("place");
                 long times=property.getLong("time");
+                String link=property.getString("url");
           //      Date d1=new Date(times);
             /*    Date d1=new Date(times);
                 SimpleDateFormat sdf=new SimpleDateFormat("DD MMM,YYYY");
                 String dates=sdf.format(d1);
                 Quakesinfo qiii=new Quakesinfo(mmag,loc,dates);*/
-                Quakesinfo qiii=new Quakesinfo(mmag,loc,times);
+                Quakesinfo qiii=new Quakesinfo(mmag,loc,times,link);
                 earthquakes.add(qiii);
             }
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
